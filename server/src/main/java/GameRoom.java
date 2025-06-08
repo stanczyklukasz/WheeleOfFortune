@@ -69,7 +69,7 @@ public class GameRoom {
         }
 
         if (!isStarted()) {
-            if (playerAction.isStart() && clients.size() > MAX_PLAYERS) {
+            if (playerAction.isStart() && clients.size() <= MAX_PLAYERS) {
                 startGame();
                 return;
             }
